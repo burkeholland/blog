@@ -1,6 +1,6 @@
 ---
 title: "Cosmos CRUD"
-date: 2021-02-02T16:24:55-06:00
+date: 2020-02-02T16:24:55-06:00
 draft: false
 ---
 
