@@ -1,18 +1,22 @@
 ---
 title: "VS Code for the complete beginner"
 date: "2021-01-02"
-draft: false
+draft: true
 ---
 
-Have you never used a coding tool in your life? Do you barely know how to code, or not know how to code at all? Would you like to learn, but everything looks so tedious and complicated that it hardly seems worth sacrificing valuable gaming time? Do you strongly dislike blog posts that start with a series of rhetorical questions?
+When you're first learning to code, everything seems confusing and complicated. Not only do you have to learn a language, but you have to learn the tools that coders use as well. These tools can be pretty inimidating. They have lots of buttons and icons and panels. You aren't sure what any of it does and you're scared you're going to break everything, so you just try not to open the program. I call this the "Photoshop Reaction" because it's how I feel everytime I open Photoshop.
 
-Well, my friend, you have come to the right place.
+Despite being fairly minimal, VS Code can feel that way as well. The good news is that all you need is for someone to show you a few main concepts, and you'll feel as comfortable in it as you do in your own bedroom. Only with 100% less dirty socks on the floor and no Justin Bieber posters. I know you have one. I do too. The first step is aknowledging that "Sorry" is, in fact, a good song.
 
-Coding is tedious - yes. Coding tools are itimidating - also yes. But they are not nearly as complicated as they look. All you need is for someone to show you a few key ideas and you'll know most of what I know after *checks watch* a lot of years of coding. Seriously. Let me show you.
+In this post, I want to help you get started with VS Code if you are a complete beginner. No skill is required here. You don't even have to know how to code. Being a Bieber fan helps with some of the jokes, but is not required. 
 
-## Installing Visual Studio Code (VS Code)
+## Installing
 
-Visual Studio Code (also called VS Code) is a tool that helps you write, run and debug your code. It's kind of like Google Docs, only instead of writing a report or making a 
+Visual Studio Code (also called VS Code) is a tool that helps you write, run and debug your code. It's kind of like Google Docs, only instead of writing a report or making a flyer for your Justin Bieber cover band, you build applications. You can build anything in VS Code - from websites to mobile apps to bots and anything else you can dream up.
+
+VS Code works on Mac and PC, and you can install it here. It is free and there are no in-app purchases or other things you'll be tricked into buying. It's just free. 
+
+
 
 
 
