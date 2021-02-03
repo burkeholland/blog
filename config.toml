@@ -1,0 +1,7 @@
+baseURL = "http://burkeholland.github.io/"
+title = "Burke Knows Words"
+languageCode = "en-us"
+theme = "paper"
+contentDir = "content/posts"
+[markup.goldmark.renderer]
+unsafe= true
