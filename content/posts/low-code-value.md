@@ -22,7 +22,7 @@ From time to time, she has small automation needs. For instance, she gets orders
 
 I was halfway to building a Node application that auth'd to Gmail, parsed the body with an HTML parser and an npm package to send things to the printer before I realized that this is probably all solvable with low code tools. 
 
-So I built an Azure Logic App that does this in - no joke - two steps. 
+So I built an [Azure Logic App](https://docs.microsoft.com/azure/logic-apps/quickstart-create-first-logic-app-workflow?WT.mc_id=devcloud-15662-buhollan) that does this in - no joke - two steps. 
 
 ## Building the Logic App
 
@@ -35,12 +35,12 @@ I added a label to any incoming order email with an "Order" label. Gmail calls t
 
 > Note: the easiest way to do this whole thing would be to forward the email once it comes in via the same filter in Gmail - cause you can do that. Unfortunately, this doesn't work. For some reason, the printer won't accept forwarded emails. I lost about an hour to that wierdness.
 
-I started with a blank Logic App and added the Gmail Trigger to start. It has the ability to check for new mail, and you can even specify a label. 
+I started with a blank Logic App and added the Gmail Trigger to start. It has the ability to check for new mail, and you can even specify a label to filter on. 
 
 ![](/media/low-code-value/gmail-trigger.jpg)
 
 
-The next step is to add an action that sends an email to the printer. I've got an HP Envy 5640 that supports HP ePrint - "a cloud-based service that lets you print from anywhere...". Once you set it up, you get a super ugly email address that looks like `kslf11skjflk83@hpeprint.com`. But anything you send to that ugliness from a "trusted" sender will print. It works well.
+The next step is to add an action that sends any emails it found in step one to the printer. I've got an HP Envy 5640 that supports [HP ePrint](https://support.hp.com/us-en/document/c03721293) - "a cloud-based service that lets you print from anywhere...". Once you set it up, you get a super ugly email address that looks like `kslf11skjflk83@hpeprint.com`. But anything you send to that ugliness from a "trusted" sender will print. It works well.
 
 ![](/media/low-code-value/full-logic-app.jpg)
 
