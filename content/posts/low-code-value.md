@@ -14,7 +14,7 @@ I think the strongest case for the success of NoLow at the moment has more to do
 
 My wife owns a small business. It's one of those yard sign businesses that have exploded in popularity during the pandemic. I was skeptical of the long-term viability of a business built on corrugated blown up letters stuck in your yard, but when she put up a sign for my birthday, it did make me feel special and I can understand why she's getting 5 and 6 orders a day at around 75 bucks a pop.
 
-![](/media/low-code-value/yard-sign.JPEG)
+![Example yard sign in front of a house](/media/low-code-value/yard-sign.JPEG)
 
 I am defacto tech support for all the digital aspects of her business. Since it's a franchise, nearly everything she needs is provided by the company. And, if I might add, it's pretty good. She complains, but she has never used enterprise software before so her only frame of reference is her iPhone, on which everything kind of "just works".
 
@@ -30,19 +30,19 @@ First I had some prep work to do.
 
 I added a label to any incoming order email with an "Order" label. Gmail calls these "filters" by the way. The order format ALWAYS starts the same way and they always come from the same sender. Anybody could write this filter. 
 
-![](/media/low-code-value/email-filter.jpg)
+![Gmail filter screen showing new filter](/media/low-code-value/email-filter.jpg)
 
 
 > Note: the easiest way to do this whole thing would be to forward the email once it comes in via the same filter in Gmail - cause you can do that. Unfortunately, this doesn't work. For some reason, the printer won't accept forwarded emails. I lost about an hour to that weirdness.
 
 I started with a blank Logic App and added the Gmail Trigger to start. It has the ability to check for new mail, and you can even specify a label to filter on. 
 
-![](/media/low-code-value/gmail-trigger.jpg)
+![Logic App showing Gmail Trigger settings](/media/low-code-value/gmail-trigger.jpg)
 
 
 The next step is to add an action that sends any emails it found in step one to the printer. I've got an HP Envy 5640 that supports [HP ePrint](https://support.hp.com/us-en/document/c03721293) - "a cloud-based service that lets you print from anywhere...". Once you set it up, you get a super ugly email address that looks like `kslf11skjflk83@hpeprint.com`. But anything you send to that ugliness from a "trusted" sender will print. It works well.
 
-![](/media/low-code-value/full-logic-app.jpg)
+![Logic App showing Gmail Trigger settings and Gmail send email action](/media/low-code-value/full-logic-app.jpg)
 
 > I put the printer email in a Logic App parameter so it's not part of the program itself. That's the coder in me. I can't help it.
 
