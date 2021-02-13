@@ -1,0 +1,10 @@
+<figure class="quote">
+  <blockquote>
+    {{ .Inner }}
+  </blockquote>
+  {{ if (.Get "source")}}
+  <figcaption>
+    &mdash; {{ .Get "source" }}
+  </figcaption>
+  {{ else }}&nbsp;{{ end }}
+</figure>  
