@@ -14,7 +14,7 @@ Even better, you can learn what you _need_ instead of things that you _might_ ne
 
 But this post is not a shot at Algebra (I love you math people - really I do), this is about MORE free knowledge. Specficially, an 8 part video series on how to use "Development Containers".
 
-> If you prefer reading to videos (you do you) you can get this whole series as [step-by-step tutorial on Microsoft Learn](https://docs.microsoft.com/en-us/learn/modules/use-docker-container-dev-env-vs-code/).
+> If you prefer reading to videos (you do you) you can get this whole series as [step-by-step tutorial on Microsoft Learn](https://docs.microsoft.com/en-us/learn/modules/use-docker-container-dev-env-vs-code?WT.mc_id=devcloud-11496-buhollan).
 
 ## Development Containers
 
