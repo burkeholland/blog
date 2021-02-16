@@ -104,17 +104,22 @@ Believe it or not, your computer doesn't know how to run JavaScript files. In fa
 
 I know that sounds crazy because there are applications running all over the place. You're using one right now (a web browser) to read this blog post.
 
-To run applications on your computer, you need to install something that can read your code files. For JavaScript, that's a program called "[Node.js(LTS)](https://nodejs.org/en/download/)". Once you install "Node.js", your computer will know how to run JavaScript files. These programs are called "runtimes".
+To run applications on your computer, you need to install something that can read your code files. For JavaScript, that's a program called "[Node.js](https://nodejs.org/en/download/)". Once you install "Node.js", your computer will know how to run JavaScript files. These programs are called "runtimes".
 
 This post assumes that you already have Node, Python, Java or some runtime installed on your computer.
 
-To execute the "main.js" code file, you need to use the built-in terminal in VS Code. The terminal can be opened from the VS Code Command Palette.
+To execute the "main.js" code file, you need to use the built-in terminal in VS Code. The terminal can be opened from the [VS Code Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#:~:text=Command%20Palette%23&text=The%20most%20important%20key%20combination,provides%20access%20to%20many%20commands.)
 
 ### The Command Palette
 
 Press F1 to open the VS Code Command Palette. This is a box that contains virtually everything that VS Code can do. You can use this box to create files, folders, change the language of a file - everything that we've done so far can be found in this box. Just search for what you want. In our case, search for "terminal". Select "Create JavaScript debug terminal".
 
 ![](/media/vs-code-beginner/create-terminal.jpg)
+
+The terminal appears at the bottom of VS Code. Your terminal may look different than mine depending on whether you are on Windows or Mac, and whether or not you've customized your terminal like I have.
+
+![](/media/vs-code-beginner/terminal.jpg)
+
 
 
 
