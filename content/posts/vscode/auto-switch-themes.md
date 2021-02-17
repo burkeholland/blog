@@ -1,5 +1,5 @@
 ---
-title: "How to auto switch themes in VS Code based on the time of day"
+title: "How to switch themes in VS Code based on the time of day"
 date: 2021-02-16T13:53:57-06:00
 draft: true
 ---
