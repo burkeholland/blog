@@ -1,7 +1,7 @@
 ---
 title: "How to switch themes in VS Code based on the time of day"
 date: 2021-02-16T13:53:57-06:00
-draft: true
+draft: false
 ---
 
 It's a good idea to switch between dark and light mode depending on what time of day it is. During the day when your body is more awake, it might make more sense to use a light theme where reading comprehension is better. At night, your eyes become more tired and bright screen light can be harder on your tired eyes.
