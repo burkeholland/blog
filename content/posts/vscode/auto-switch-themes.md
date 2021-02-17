@@ -10,7 +10,7 @@ Visual Studio Code doesn't do this out-of-the-box, but just like Steve Jobs once
 
 ## Theme Switcher Extension
 
-The [Theme Switcher Extension](https://marketplace.visualstudio.com/items?itemName=savioserra.theme-switcher) for VS Code will let you define times of the day at which to apply a different theme.
+The [Theme Switcher Extension](https://marketplace.visualstudio.com/items?itemName=savioserra.theme-switcher&WT.mc_id=devcloud-8766-buhollan) for VS Code will let you define times of the day at which to apply a different theme.
 
 ![](/media/vscode/auto-switch-themes/theme-switcher-extension.jpg)
 
