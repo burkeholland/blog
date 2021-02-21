@@ -1,7 +1,7 @@
 ---
 title: "Google trends shows Python interest surging"
 date: 2021-02-17T10:03:14-06:00
-draft: false
+draft: true
 ---
 
 While looking at Google Trends the other day for ["visual studio code"](https://trends.google.com/trends/explore?q=visual%20studio%20code&geo=US), I noticed that one of the rising trends was "visual studio code format json". Today, it's gone, but still in the top related queries along with "how to format code".
