@@ -1,7 +1,7 @@
 ---
 title: "Multiple Cursors"
 date: 2021-02-21T11:08:36-06:00
-draft: false
+draft: true
 ---
 
 I felt intimidated by multiple cursors the first time I heard about them. It's hard enough to edit in just once place. How can I edit in multiple places at once? It's one of those features that makes you wonder if you are a "real developer".
