@@ -40,7 +40,7 @@ So Python is popular, but why is _that_?
 
 There are a lot of potential reasons. Certainly one is that Python is a popular language for students. 
 
-This is because it's syntatically easier to write than it's C-based counterparts. It is also dynamic, which means that it doesn't require a compilation step. And possibly most important of all - it skirts around the painfully abstract "object-oriented" programming model. I spent far more energy trying to understand classes and inheritance than I ever did using them.
+This is because it's syntatically easier to write than it's C-based counterparts. It is also dynamic, which means that it doesn't require a compilation step. And possibly most important of all - it skirts around the painfully abstract "object-oriented" programming model. I spent far more time trying to understand classes and inheritance than I ever did using them.
 
 There is also the rise in popularity of data science as a profession. Although I remain skeptical of this. I still don't know anyone who works as a "data scientist". I'm not saying the job doesn't exist - I know that it does. And a lot of other people must expect that it does too, because "Data scientist or machine learning specialist" is the [#2 on people "actively looking for a job"](https://insights.stackoverflow.com/survey/2020#work-whos-actively-looking-for-a-job) on the same Stack Overflow survey I referenced earlier. But it only occupies [8% of the total available roles](https://insights.stackoverflow.com/survey/2020#developer-roles). I'm just saying that perhaps the hype is a lot bigger than the demand.
 
