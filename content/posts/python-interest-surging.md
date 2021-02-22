@@ -40,13 +40,13 @@ So Python is popular, but why is _that_?
 
 There are a lot of potential reasons. Certainly one is that Python is a popular language for students. 
 
-This is because it's syntatically easier to write than it's C-based counterparts. It is also dynamic, which means that it doesn't require a compilation step. And possibly most important of all - it skirts around the painfully abstract "object-oriented" programming model. I spent far more time trying to understand classes and inheritance than I ever did using them.
+This is because it's syntatically easier to write than it's C-based counterparts. It is also dynamic, which means that it doesn't require a compilation step. And possibly most important of all - it skirts around the painfully abstract "object-oriented" programming model. I spent far more **time** trying to understand classes and inheritance than I ever did using them.
 
 There is also the rise in popularity of data science as a profession. Although I remain skeptical of this. I still don't know anyone who works as a "data scientist". I'm not saying the job doesn't exist - I know that it does. And a lot of other people must expect that it does too, because "Data scientist or machine learning specialist" is the [#2 on people "actively looking for a job"](https://insights.stackoverflow.com/survey/2020#work-whos-actively-looking-for-a-job) on the same Stack Overflow survey I referenced earlier. But it only occupies [8% of the total available roles](https://insights.stackoverflow.com/survey/2020#developer-roles). I'm just saying that perhaps the hype is a lot bigger than the demand.
 
 ## Python is big
 
-All arguments on what people are doing with Python aside, it's certainly popular even by Google Trends standards. That's a measurement that is quite hard to deny. So if you are looking to do Python with Visual Studio Code, here is a list of resources that I hope you find helpful...
+All arguments on what people are doing with Python aside, it's certainly popular even by Google Trends standards - even when you *aren't* searching for it. That's a measurement that is quite hard to deny. So if you are looking to do Python with Visual Studio Code, here is a list of resources that I hope you find helpful...
 
 * [Python Coding Pack](https://code.visualstudio.com/learntocode?WT.mc_id=devcloud-17278-buhollan) - A complete install of VS Code that also installs Python, the Python extension and configures your enviornment. Recommended for folks who just want to get up and running with a single install.
 
@@ -59,7 +59,3 @@ All arguments on what people are doing with Python aside, it's certainly popular
 * [Jupyter Notebooks Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter&WT.mc_id=devcloud-17278-buhollan) - Support for Jupyter Notebooks. This extension is included when you install the Python extension so you should do that instead.
 
 * [Use a Docker Container as a Development Enviornment with VS Code](https://docs.microsoft.com/learn/modules/use-docker-container-dev-env-vs-code/?WT.mc_id=devcloud-17278-buhollan) - How to spin up a Python dev env using a Docker container. All examples are in Python.
-
-
-
-
