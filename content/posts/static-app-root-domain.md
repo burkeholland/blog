@@ -5,4 +5,4 @@ draft: false
 ---
 
 <h3>This article is now obsolete.</h3> 
-<p>Please use the official [Custom Domain support](https://docs.microsoft.com/azure/static-web-apps/custom-domain?tabs=azure-dns&WT.mc_id=devcloud-0000-buhollans) in Azure Static Web Apps.</p>
+<p>Please use the official <a href="https://docs.microsoft.com/azure/static-web-apps/custom-domain?tabs=azure-dns&WT.mc_id=devcloud-0000-buholland">Custom Domain support</a>in Azure Static Web Apps.</p>
