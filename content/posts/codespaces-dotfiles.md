@@ -8,11 +8,11 @@ One of the first things you are gonna realize after you get started with Codespa
 
 ## What's a dotfile?
 
-A "dotfile" is any configuration files that start with a dot. You can view your dotfiles by going to your home directory on your machine (`cd ~`) and running `ls -al`. For instance, the `.zshrc` file allows you tweak how your shell (terminal) looks and works. Behold, the glory of my terminal in Codespaces - powered by my .zshrc file...
+A "dotfile" is any configuration files that start with a dot. You can view your dotfiles by going to your home directory on your machine (`cd ~`) and running `ls -al`. For instance, the ".zshrc" file allows you to tweak how your shell (terminal) looks and works. Behold, the glory of my terminal in Codespaces - powered by my .zshrc file...
 
 ![codespaces terminal running zsh](/media/terminal-glory.jpg)
  
-For this post, we're only going to focus on the `.zshrc` file as that's where all of my terminal configuration can be found. But this post isn't about oh-my-zsh and how it's the best shell and that's not up for debate. This process will work for any dotfiles.
+For this post, we're only going to focus on the ".zshrc" file as that's where all of my terminal configuration can be found. But this post isn't about oh-my-zsh and how it's the best shell and that's not up for debate. This process will work for any dotfiles.
 
 People like things that come in steps, so here you go...
 
@@ -26,11 +26,11 @@ So create the "dotfiles" repo on GitHub and then on to step 2.
 
 ## Step 2. Add your dotfiles
 
-Copy just the `.zshrc` file into your "dotfiles" project. That's all there is for step 2. A paragraph has at last 3 sentences.
+Copy just the ".zshrc" file into your "dotfiles" project. That's all there is for step 2. A paragraph has at last 3 sentences.
 
 ## Step 3. Update your .zshrc file
 
-Your `.zshrc` file needs a little updating. You need to find anywhere that references your home path directly and replace it with the HOME environment variable. This is because Codespaces don't run under your account so the directory structure is doing to be a bit different. 
+Your ".zshrc" file needs a little updating. You need to find anywhere that references your home path directly and replace it with the HOME environment variable. This is because Codespaces don't run under your account so the directory structure is doing to be a bit different. 
 
 **BEFORE**
 
@@ -46,7 +46,7 @@ export ZSH="/home/burkeholland/.oh-my-zsh"
 export ZSH="${HOME}/.oh-my-zsh"
 ```
 
-Now you can add whatever you like - themes, plugins, stuff you copied and pasted from StackOverflow and you don't remember what it does. You know - all the stuff you normally do in your `.zshrc` file. To keep it simple, I'm just going to do a theme and plugins, but we'll throw a wrench in here and use plugins that need to be installed separately and then cover how to do that. So here's our completed sample `.zshrc` file. Don't forget to source `oh-my-zsh.sh`!
+Now you can add whatever you like - themes, plugins, stuff you copied and pasted from StackOverflow and you don't remember what it does. You know - all the stuff you normally do in your ".zshrc" file. To keep it simple, I'm just going to do a theme and plugins, but we'll throw a wrench in here and use plugins that need to be installed separately and then cover how to do that. So here's our completed sample ".zshrc" file. Don't forget to source `oh-my-zsh.sh`!
 
 ```
 # Path to your oh-my-zsh installation.
@@ -61,13 +61,13 @@ source $ZSH/oh-my-zsh.sh
 
 ### Step 4. Add a shell script to load your dotfiles
 
-Now if our `.zshrc` file wasn't trying to load plugins that don't exist, we could just use it as is. As long as it's in the root of the repo, Codespaces will copy this (and any other dotfile) to the $HOME directory in your Codespace. Which is where you want them. But we threw some chaos into the situation by including plugins that need to be installed separately, and I did that so we can examine what happens when you need to run a script to properly "install" your dotfiles - which is frequently the case because you'll end up trying to do all manner of crazy things to your Codespace and by God, I want you to realize all your hopes and dreams.
+Now if our ".zshrc" file wasn't trying to load plugins that don't exist, we could just use it as is. As long as it's in the root of the repo, Codespaces will copy this (and any other dotfile) to the $HOME directory in your Codespace. Which is where you want them. But we threw some chaos into the situation by including plugins that need to be installed separately, and I did that so we can examine what happens when you need to run a script to properly "install" your dotfiles - which is frequently the case because you'll end up trying to do all manner of crazy things to your Codespace and by God, I want you to realize all your hopes and dreams.
 
-You can add a script file to your dotfiles repo that will be executed when the dotfiles are loaded into your Codespaces. You do have to give it the proper name, but GitHub gives you [several to choose from](https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-codespaces-for-your-account#dotfiles). For this example, we'll just use `install.sh`. When Codespaces detects a script file in your dotfiles repo, it copies the whole thing to "/workspaces/.codespaces/.persistedshare/dotfiles" and expects you to do all of the copying of dotfiles to the correct place.
+You can add a script file to your dotfiles repo that will be executed when the dotfiles are loaded into your Codespaces. You do have to give it the proper name, but GitHub gives you [several to choose from](https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-codespaces-for-your-account#dotfiles). For this example, we'll just use `install.sh`. When Codespaces detects a script file in your dotfiles repo, it clones the dotfiles repo to "/workspaces/.codespaces/.persistedshare/dotfiles" and then executes your script file. It expects your script file to do all of the copying of dotfiles to the correct place.
 
-In the script file, you'll need to first make it executable by adding "#!/bin/bash". Not all Linux distros include "bash", so if "bash" isn't present in your Codespace, you can use "#!/bin/sh".
+In the script file, you'll need to first make it executable by adding `#!/bin/bash`. Not all Linux distros include "bash", so if "bash" isn't present in your Codespace, you can use `#!/bin/sh`.
 
-I like to wrap up all my logic in a function and call that function. This script file is only handling the `.zshrc`, but it could handle all sorts of other dotfiles install logic in the future, so having separate functions will make me look like a "real" developer. In this function, we're going to install the 2 plugins: zsh-autosuggestions and zsh-nvm. 
+I like to wrap up all my logic in a function and call that function. This script file is only handling the ".zshrc", but it could handle all sorts of other dotfiles install logic in the future, so having separate functions will make me look like a "real" developer. In this function, we're going to install the 2 plugins: zsh-autosuggestions and zsh-nvm. 
 
 ```
 #!/bin/sh
@@ -90,13 +90,13 @@ zshrc() {
 zshrc
 ```
 
-"Adding" these plugins is just cloning them into the custom plugins directory. Just pay attention to the destination and make sure you are using the $ZSH_CUSTOM variable so they end up in the right place.
+"Adding" these plugins is just cloning them into the custom plugins directory. Just pay attention to the destination and make sure you are using the ZSH_CUSTOM variable so they end up in the right place.
 
-The last thing we do in that script is overwrite the `.zshrc` file in the HOME directory with the contents of the one from our dotfiles repo. Remember, when when Codespaces detects a script file in your dotfiles repo, it copies the whole thing to "/workspaces/.codespaces/.persistedshare/dotfiles". So it's on YOU to copy those dotfiles to the right place with your script file.
+The last thing we do in that script is overwrite the ".zshrc" file in the HOME directory with the contents of the one from our dotfiles repo. Remember, when when Codespaces detects a script file in your dotfiles repo, it copies the whole thing to "/workspaces/.codespaces/.persistedshare/dotfiles". So it's on YOU to copy those dotfiles to the right place with your script file.
 
 ### Step 5. Mark the install script as executable with git
 
-Now you need to tell *git* that this file is executable. I figured this out just last week after getting "file is not executable" over and over and Googling my fingers off. You need to *add* the "install.sh" as executable. If you've already added it, remove it with `git rm --cached install.sh`. 
+Now you need to tell *git* that this file is executable. I figured this out just last week after getting "file is not executable" over and over and Googling my fingers off. You need to *git add* the "install.sh" as executable. If you've already added it, remove it with `git rm --cached install.sh`. 
 
 ```
 git add install.sh --chmod=+x 
@@ -104,7 +104,7 @@ git add install.sh --chmod=+x
 
 You can also mark the file as executable with `git update-index --chmod=+x install.sh`, but if you do that, every time you change the script file the executable bit will get flipped off and you'll have to run that command again and you will forget and get stuck in a cycle of "file is not executable" and you will subconsciously blame me and I don't need that on my conscience. 
 
-> NOTE: After you add the install.sh with the +x (executable) bit turned on and commit, git may still show that index file as having changes. Reject those changes because you'll just be flipping the bit back. It's tedious. I know.
+> NOTE: After you add the install.sh with the +x (executable) bit turned on and commit, git may still show that install.sh file as having changes. Reject those changes because you'll just be flipping the bit back. It's tedious. I know.
 
 Now commit all your files and push them to your repo.
 
@@ -118,9 +118,17 @@ If you already have a Codespace, doing a rebuild should pull in your dotfiles. I
 
 ## Step 6: Make sure the right shell is being loaded
 
-By default, Codespaces load "oh-my-bash", which is kind of like "oh-my-zsh", but not at all "oh-my-zsh". You need to tell your Codespace to load zsh as your terminal. To do that, add the following to your "devcontainer.json" file. 
+By default, Codespaces load "oh-my-bash", which is kind of like "oh-my-zsh", but not at all "oh-my-zsh". You need to tell your Codespace to load zsh as your terminal. To do that, add the following to your "devcontainer.json" file...
+
+```
+"settings": {
+    "terminal.integrated.shell.linux": "/bin/zsh"
+}
+```
 
 > If you don't have a "devcontainer.json" file, see [this article](https://docs.github.com/en/codespaces/customizing-your-codespace/configuring-codespaces-for-your-project#using-a-predefined-container-configuration) for how to add one to your Codespace.
+
+Note that this will set "zsh" as the default shell for everyone who uses the container because the "devcontainer.json" does go in source control. But let's be honest, they should be thanking you for making that change.
 
 ## Take your custom environment with you
 
