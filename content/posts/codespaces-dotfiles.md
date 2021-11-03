@@ -32,14 +32,14 @@ Copy just the `.zshrc` file into your "dotfiles" project. That's all there is fo
 
 Your `.zshrc` file needs a little updating. You need to find anywhere that references your home path directly and replace it with the HOME environment variable. This is because Codespaces don't run under your account so the directory structure is doing to be a bit different. 
 
-**BEFORE***
+**BEFORE**
 
 ```
 # Path to your oh-my-zsh installation.
 export ZSH="/home/burkeholland/.oh-my-zsh"
 ```
 
-**AFTER***
+**AFTER**
 
 ```
 # Path to your oh-my-zsh installation.
