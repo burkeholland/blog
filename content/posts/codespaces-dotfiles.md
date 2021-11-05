@@ -118,17 +118,13 @@ If you already have a Codespace, doing a rebuild should pull in your dotfiles. I
 
 ## Step 6: Make sure the right shell is being loaded
 
-By default, Codespaces load "oh-my-bash", which is kind of like "oh-my-zsh", but not at all "oh-my-zsh". You need to tell your Codespace to load zsh as your terminal. To do that, add the following to your "devcontainer.json" file...
+By default, Codespaces load "oh-my-bash", which is kind of like "oh-my-zsh", but not at all "oh-my-zsh". You need to tell your Codespace to load zsh as your terminal. Thanks to @brettsky on Twitter for pointing out that the easiest way to that is to add the following to your VS Code settings (<kbd>Cmd/Ctrl</kbd> + <kbd>,</kbd>)...
 
 ```
-"settings": {
-    "terminal.integrated.shell.linux": "/bin/zsh"
-}
+"terminal.integrated.defaultProfile.linux": "zsh"
 ```
 
-> If you don't have a "devcontainer.json" file, see [this article](https://docs.github.com/en/codespaces/customizing-your-codespace/configuring-codespaces-for-your-project#using-a-predefined-container-configuration) for how to add one to your Codespace.
-
-Note that this will set "zsh" as the default shell for everyone who uses the container because the "devcontainer.json" does go in source control. But let's be honest, they should be thanking you for making that change.
+> If you don't do this, your zsh shell just won't be loaded and it will look like your dotfiles are doing nothing.
 
 ## Take your custom environment with you
 
