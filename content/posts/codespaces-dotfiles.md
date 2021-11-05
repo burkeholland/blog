@@ -118,7 +118,7 @@ If you already have a Codespace, doing a rebuild should pull in your dotfiles. I
 
 ## Step 6: Make sure the right shell is being loaded
 
-By default, Codespaces load "oh-my-bash", which is kind of like "oh-my-zsh", but not at all "oh-my-zsh". You need to tell your Codespace to load zsh as your terminal. Thanks to @brettsky on Twitter for pointing out that the easiest way to that is to add the following to your VS Code settings (<kbd>Cmd/Ctrl</kbd> + <kbd>,</kbd>)...
+By default, Codespaces load "oh-my-bash", which is kind of like "oh-my-zsh", but not at all "oh-my-zsh". You need to tell your Codespace to load zsh as your terminal. Thanks to [@brettsky on Twitter](https://twitter.com/brettsky) for pointing out that the easiest way to that is to add the following to your VS Code settings (<kbd>Cmd/Ctrl</kbd> + <kbd>,</kbd>)...
 
 ```
 "terminal.integrated.defaultProfile.linux": "zsh"
