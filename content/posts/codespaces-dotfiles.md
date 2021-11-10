@@ -129,7 +129,7 @@ By default, Codespaces load "oh-my-bash", which is kind of like "oh-my-zsh", but
 
 ### Making it work with Remote-Containers
 
-The [Remote-Containers extension for VS Code]("dotfiles.repository": "https://github.com/burkeholland/dotfiles",) uses virtually the same technology and configuration as Codespaces. With Remote-Containers, you are essentially hosting your own Codespace. With Remote-Containers, you can still use this exact same setup, but you need to change one setting in VS Code to tell Remote-Containers where your dotfiles repo is...
+The [Remote-Containers extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers&WT.mc_id=devcloud-0000-buhollan) uses virtually the same technology and configuration as Codespaces. With Remote-Containers, you are essentially hosting your own Codespace. With Remote-Containers, you can still use this exact same setup, but you need to change one setting in VS Code to tell Remote-Containers where your dotfiles repo is...
 
 ```json
 "dotfiles.repository": "https://github.com/burkeholland/dotfiles"
