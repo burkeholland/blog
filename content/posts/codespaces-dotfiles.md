@@ -34,21 +34,21 @@ Your ".zshrc" file needs a little updating. You need to find anywhere that refer
 
 **BEFORE**
 
-```
+```bash
 # Path to your oh-my-zsh installation.
 export ZSH="/home/burkeholland/.oh-my-zsh"
 ```
 
 **AFTER**
 
-```
+```bash
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
 ```
 
 Now you can add whatever you like - themes, plugins, stuff you copied and pasted from StackOverflow and you don't remember what it does. You know - all the stuff you normally do in your ".zshrc" file. To keep it simple, I'm just going to do a theme and plugins, but we'll throw a wrench in here and use plugins that need to be installed separately and then cover how to do that. So here's our completed sample ".zshrc" file. Don't forget to source `oh-my-zsh.sh`!
 
-```
+```bash
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="cloud"
@@ -69,7 +69,7 @@ In the script file, you'll need to first make it executable by adding `#!/bin/ba
 
 I like to wrap up all my logic in a function and call that function. This script file is only handling the ".zshrc", but it could handle all sorts of other dotfiles install logic in the future, so having separate functions will make me look like a "real" developer. In this function, we're going to install the 2 plugins: zsh-autosuggestions and zsh-nvm. 
 
-```
+```bash
 #!/bin/sh
 
 zshrc() {
@@ -98,7 +98,7 @@ The last thing we do in that script is overwrite the ".zshrc" file in the HOME d
 
 Now you need to tell *git* that this file is executable. I figured this out just last week after getting "file is not executable" over and over and Googling my fingers off. You need to *git add* the "install.sh" as executable. If you've already added it, remove it with `git rm --cached install.sh`. 
 
-```
+```bash
 git add install.sh --chmod=+x 
 ```
 
@@ -120,11 +120,20 @@ If you already have a Codespace, doing a rebuild should pull in your dotfiles. I
 
 By default, Codespaces load "oh-my-bash", which is kind of like "oh-my-zsh", but not at all "oh-my-zsh". You need to tell your Codespace to load zsh as your terminal. Thanks to [@brettsky on Twitter](https://twitter.com/brettsky) for pointing out that the easiest way to that is to add the following to your VS Code settings (<kbd>Cmd/Ctrl</kbd> + <kbd>,</kbd>)...
 
-```
+```json
 "terminal.integrated.defaultProfile.linux": "zsh"
 ```
 
 > If you don't do this, your zsh shell just won't be loaded and it will look like your dotfiles are doing nothing.
+
+
+### Making it work with Remote-Containers
+
+The [Remote-Containers extension for VS Code]("dotfiles.repository": "https://github.com/burkeholland/dotfiles",) uses virtually the same technology and configuration as Codespaces. With Remote-Containers, you are essentially hosting your own Codespace. With Remote-Containers, you can still use this exact same setup, but you need to change one setting in VS Code to tell Remote-Containers where your dotfiles repo is...
+
+```json
+"dotfiles.repository": "https://github.com/burkeholland/dotfiles"
+```
 
 ## Take your custom environment with you
 
