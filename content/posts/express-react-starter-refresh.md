@@ -14,15 +14,15 @@ First - a disclaimer...
 
 Well, there are a lot of reasons, but the most fundamental one is because **I want to**. And let me just say, it's way harder than it should be. My goodness - it's a website. All of this has gotten way out of hand, but so many people have already written that blog post and I certainly can't say "get off my lawn" better than they can.
 
-The point is that I am aknowledging that it's way easier to run the React app in one project and the API in another and avoid this problem entirely.
+The point is that I am acknowledging that it's way easier to run the React app in one project and the API in another and avoid this problem entirely.
 
-But what if you had a single app instance where you wanted to host your app in your preferred cloud provider? You would have to pay for a second to host the API, and maybe you don't want to do that. Or maybe you just think everything is cleaner with a single project and not pointlessly running in multiple locations. And also, you did ASP.NET Webforms back in the day baby, back when all the logic for a web app was self-contained and pages were assembled on the server the way god itended - way before "JavaScript" was considered even a remotely good idea to do anything at all other than disable the back button because SOME MEN JUST WANT TO WATCH THE WORLD BURN.
+But what if you had a single app instance where you wanted to host your app in your preferred cloud provider? You would have to pay for a second to host the API, and maybe you don't want to do that. Or maybe you just think everything is cleaner with a single project and not pointlessly running in multiple locations. And also, you did ASP.NET Webforms back in the day baby, back when all the logic for a web app was self-contained and pages were assembled on the server the way god intended - way before "JavaScript" was considered even a remotely good idea to do anything at all other than disable the back button because SOME MEN JUST WANT TO WATCH THE WORLD BURN.
 
 ![](https://i.kym-cdn.com/photos/images/newsfeed/000/505/362/3f4.gif)
 
 ### Express React Starter
 
-Express React Starter (ERS - prounounced "ears", because I made it and therefore you have to pronounce it anyway I say) is a template, but really more of an example on how to go about setting this up. It's a static GitHub project and therefore can possibly keep up with changes in create-react-app. Let's take a look at how I put it together so you can tell me why it's wrong.
+Express React Starter (ERS - pronounced "ears", because I made it and therefore you have to pronounce it anyway I say) is a template, but really more of an example on how to go about setting this up. It's a static GitHub project and therefore can't possibly keep up with changes in create-react-app. Let's take a look at how I put it together so you can tell me why it's wrong.
 
 I start with a fresh "create-react-app" scaffold.
 
@@ -146,7 +146,7 @@ In VS Code you can right-click / rename those terminal tabs so you can keep trac
 
 ![](/media/terminal-tabs.png)
 
-And you can find this monster runnnig at http://localhost:3001.
+And you can find this monster running at http://localhost:3001.
 
 ![](/media/hello-from-api.png)
 
@@ -154,7 +154,7 @@ That's the stuff! And just when you thought we were done, let's talk about going
 
 ### Building for production
 
-It's really not that bad. All we want to do here is build the frontend and drop the "build" in the "server" folder. A simple `mv` commmand _should_ have been enough, but since there is no cross-platform equivilant, I add a simple `copy.js` file to the project root.
+It's really not that bad. All we want to do here is build the frontend and drop the "build" in the "server" folder. A simple `mv` command _should_ have been enough, but since there is no cross-platform equivalent, I add a simple `copy.js` file to the project root.
 
 ```javascript
 // This is a simple script to copy the "build" folder to the "server" directory
