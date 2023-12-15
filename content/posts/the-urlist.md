@@ -64,7 +64,7 @@ We also pay for bandwidth usage here. It costs us 8 cents per GB, but the first 
 
 Azure Storage is definitely the best way to host static sites. It’s got no overhead and it’s crazy fast. There is no container to startup. No Node server to run. You just…..can’t beat this type of hosting for single page apps.
 
-## Backend: Azure Functions + Dotnot Core
+## Backend: Azure Functions + Dotnet Core
 
 Cecil wrote the API with C# using [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function?WT.mc_id=personal-blog-buhollan). Functions is what we typically think of when someone says “serverless”. It’s the product that Microsoft positions for that market and probably falls more in line with what’s in your head when someone drops that word at a dinner party.
 
